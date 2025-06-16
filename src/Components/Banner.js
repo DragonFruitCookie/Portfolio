@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import {Container, Row, Col} from "react-bootstrap";
-import {ArrowRightCircle} from "react-bootstrap-icons";
 import bannerimg1 from "../assets/img/banner-img1.jpg";
 import bannerimg2 from "../assets/img/banner-img2.jpg";
 import bannerimg3 from "../assets/img/banner-img3.jpg";
@@ -42,7 +41,6 @@ function Banner(){
                         to learn and explore real-world implementation of the MERN stack 
                         (MongoDB, Express, React, Node.js).
                     </p>
-                    <button onClick={()=>{console.log('button got clicked')}}>Let's connect<ArrowRightCircle size={25}/></button>
                     </Col>
                 </Row>
             </Container>

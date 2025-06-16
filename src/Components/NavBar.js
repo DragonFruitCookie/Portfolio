@@ -45,8 +45,8 @@ function NavBar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#home" className={activeLink==='home'?"active navbar-link":"navbar-link"} onClick={()=>onUpdateActiveLink('home')}>Home</Nav.Link>
-            <Nav.Link href="#skills" className={activeLink==='link'?"active navbar-link":"navbar-link"} onClick={()=>onUpdateActiveLink('skills')}>Skills</Nav.Link>
             <Nav.Link href="#projects" className={activeLink==='projects'?"active navbar-link":"navbar-link"} onClick={()=>onUpdateActiveLink('projects')}>Projects</Nav.Link>
+            <Nav.Link href="#skills" className={activeLink==='link'?"active navbar-link":"navbar-link"} onClick={()=>onUpdateActiveLink('skills')}>Skills</Nav.Link>
           </Nav>
         </Navbar.Collapse>
 
@@ -55,7 +55,6 @@ function NavBar() {
                 <a href="https://www.linkedin.com/in/revathi-v-971374231/"> <img src={navIcon1} alt="" /></a>
                 <a href="https://github.com/DragonFruitCookie"> <img src={navIcon2} alt="" /></a>
             </div>
-            <button className='vvd' onClick={()=> console.log('got clicked')}><span>Let's connect!</span></button>
         </span>
       </Container>
     </Navbar>
