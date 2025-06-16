@@ -32,7 +32,7 @@ body {
   overflow-x: hidden;
   position: relative;
   background-color: #121212 !important;
-  color: #fff !important;
+  color: #FFB823 !important;
   font-family: 'Centra', sans-serif !important;
 }
 
@@ -92,7 +92,8 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  background-color: #27391C;
+  opacity: 0.8;
 }
 nav.navbar a.navbar-brand {
     width: 4%;
@@ -231,19 +232,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Banner Css ************/
-.banner {
+.banner{
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
+  width: 100%;
+  /*background-image: url('./assets/img/banner-bg.jpg');*/
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
 }
+.banner .row {
+  min-height: 50vh; 
+}
+
 .banner .tagline {
   font-weight: 700;
+  color: white;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  background: linear-gradient(50deg, rgba(62, 131, 194, 0.5) -5.91%, rgba(52, 126, 67, 0.5) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
@@ -258,7 +265,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 .banner p {
-  color: #B8B8B8;
+  color: white;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -282,7 +289,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner button:hover svg {
   margin-left: 25px;
 }
-.banner img {
+
+
+/*.banner img {
   animation: updown 3s linear infinite;
 }
 @keyframes updown {
@@ -295,7 +304,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     100% {
         transform: translateY(-20px);
     }
+}*/
+.banner img {
+    height:150px;
+    width: 150px;
+    align-content: center;
+    opacity: 1;
+    animation: fade 8s linear infinite;
 }
+@keyframes fade {
+  0%,100% { opacity: 0.2 }
+  50% { opacity: 1 }
+}
+
+
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
