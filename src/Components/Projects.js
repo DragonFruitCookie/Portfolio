@@ -19,7 +19,7 @@ function Projects(){
             <div className="projects" id="projects">
                 <Col key={index}>
                     <Card>
-                        <a href="https://www.google.com"><Card.Img variant="top" src={projectInfo.imgUrl} /></a>
+                        <a href="https://dragonfruitcookie.github.io/Portfolio/"><Card.Img variant="top" src={projectInfo.imgUrl} /></a>
                         <Card.Body>
                         <Card.Title><h2 style={{textAlign:"center", fontSize:"20px"}}>{projectInfo.title}</h2></Card.Title>
                         <Card.Text >
